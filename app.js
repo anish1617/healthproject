@@ -1,5 +1,6 @@
 var express = require("express");
 
+
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
@@ -19,7 +20,11 @@ app.use(function(req, res){
   res.type('text/plain');
   res.status(404);
 })
-
+ 
+app.get('/admin', function(req, res){
+  res.type('text/plain');
+  res.send('welcome to admin panel');
+});
 
 
 // custom 500 pafe
@@ -35,3 +40,5 @@ app.listen(app.get('port'), function(){
   console.log('Express server started on http://localhost:' 
     + app.get('port') + ': press ctrl + C to terminate.');
 });
+
+
