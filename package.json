@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/anish1617/healthproject#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "express3-handlebars": "^0.5.2"
   }
 }
